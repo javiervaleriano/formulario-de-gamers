@@ -1,0 +1,1 @@
+Formulario de encuesta parte de mis proyectos personales, específicamente para obtener un certificado de Responsive Web Design de freeCodeCamp.

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <!-- Meta VIEWPORT -->
+<meta name="viewport" content="initial-scale=1.0">
+
+			<!-- Meta tags -->
+<meta charset="utf-8">
+<meta name="description" content="¿Eres un verdadero gamer? Esta encuesta nos ayuda a conocer el promedio de gamers que abunda en el Internet. ¡Ven y prueba!">
+<meta name="keywords" content="formulario, gamer, gamers, encuesta, juego, juegos, videojuego, videojuegos">
+<meta name="author" content="Javier Alejandro Valeriano Azuaje">
+<meta name="copyright" content="Javier Alejandro Valeriano Azuaje">
+<meta name="robots" content="index">
+<meta name="reply-to" content="jvalerianoz15@gmail.com">
+
+<link rev="made" href="jvalerianoz15@gmail.com">
+
+			<!-- Tipografías -->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&display=swap" rel="stylesheet">
+
+<link rel="icon" href="Img/Mando.png">
+<link rel="stylesheet" type="text/css" href="estilos.css">
+	<title>Formulario para gamers | Javier Valeriano</title>
+</head>
+
+<body>
+<div class="container">
+  <header>
+    <h1 id="title">Formulario de encuesta para gamers</h1>
+    <p id="description"><em>Gracias por tomarte el tiempo para conocer a nuestros usuarios.</em></p>
+  </header>
+  
+ <form id="survey-form">
+    
+   <div class="grupo-form">
+    <label id="name-label" for="name">Nombre</label>
+      <input id="name" type="name" placeholder="Introduce tu nombre" class="campo-form" required>
+   </div>
+    
+   <div class="grupo-form">
+    <label id="email-label" for="email">Correo</label>
+      <input id="email" type="email" name="email" placeholder="Introduce tu correo" class="campo-form" required>
+   </div>
+   
+   <div class="grupo-form">
+     <label id="number-label" for="number">Edad <span>(opcional)</span></label>
+      <input id="number" type="number" name="number" placeholder="Edad" min="10" max="100" class="campo-form">
+   </div>
+    
+   <div class="grupo-form">
+     <p>¿Cuál opción dirías que describe mejor tu situación actual?</p>
+    <select id="dropdown" class="campo-form dropdown" required>
+      <option value="0" selected disabled>Elige una opción</option>
+      <option value="Desempleado">Desempleado</option>
+      <option value="Estudiante">Estudiante</option>
+      <option value="Freelancer">Freelancer</option>
+      <option value="Jubilado">Jubilado</option>
+      <option value="Profesional">Profesional</option>
+    </select>
+   </div>
+    
+   <div class="grupo-form">
+    <p>¿Cuántas horas le dedicas a los videojuegos?</p>
+    <label for="1-3">
+    <input id="1-3" class="input-radio" type="radio" name="horas" value="1-3-horas"><span class="radio-text">1 a 3 horas</span>
+    </label><br>
+    
+    <label for="3-6">
+      <input id="3-6" class="input-radio" type="radio" name="horas" value="3-6-horas"><span class="radio-text">3 a 6 horas</span>
+    </label><br>
+    
+    <label for="6-9">
+      <input id="6-9" class="input-radio" type="radio" name="horas" value="6-9-horas"><span class="radio-text">6 a 9 horas</span>
+    </label><br>
+     
+    <label for="9-12">
+      <input id="9-12" class="input-radio" type="radio" name="horas" value="9-12-horas"><span class="radio-text">9 a 12 horas</span>
+    </label><br>
+     
+    <label for="12-mas">
+      <input id="12-mas" class="input-radio" type="radio" name="horas" value="12-mas"><span class="radio-text">Más de 12 horas</span>
+    </label>
+   </div>
+    
+    <div class="grupo-form">
+      <p>¿Qué plataformas usas para jugar a videojuegos?</p>
+      <label for="ps4">
+        <input name="plataforma" id="ps4" class="input-checkbox" type="checkbox" value="PS4"><span class="checkbox-text">PS4</span>
+      </label><br>
+      
+      <label for="xbox-one">
+        <input name="plataforma" id="xbox-one" class="input-checkbox" type="checkbox" value="Xbox-One"><span class="checkbox-text">Xbox One</span>
+      </label><br>
+      
+      <label for="nintendo">
+        <input name="plataforma" id="nintendo" class="input-checkbox" type="checkbox" value="Nintendo-Switch"><span class="checkbox-text">Nintendo Switch</span>
+      </label><br>
+      
+      <label for="pc">
+        <input name="plataforma" id="pc" class="input-checkbox" type="checkbox" value="PC"><span class="checkbox-text">PC</span>
+      </label><br>
+      
+      <label for="moviles">
+        <input id="moviles" class="input-checkbox" value="Móviles" type="checkbox" name="plataforma"><span class="checkbox-text">Móviles (teléfonos o tablets)</span>
+      </label>
+    </div>
+   
+    <div class="grupo-form textarea">
+      <p>¿Alguna sugerencia o algún comentario?</p>
+      <textarea id="comentario" name="comentario" class="input-textarea" placeholder="Introduce tu comentario aquí..."></textarea>
+    </div>
+   
+  <div id="enviar-flex">
+   <div class="grupo-form enviar">
+     <button id="submit" type="submit" class="boton-enviar">Enviar</button>
+   </div>
+  </div>
+   </form>
+</div>
+</body>
+</html>
